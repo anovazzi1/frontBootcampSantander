@@ -1,10 +1,11 @@
-<div class="stock-card-container">
-  <div>
-    <h2>MAGLU3</h2>
-    <p>/06/06/2020</p>
+<div class="stock-card-container" [class.negative-variation-border]="stock.variation < 0">
+  <div class="stock-info-container">
+    <h2>{{stock.name}}</h2>
+    <p>{{stock.date}}</p>
   </div>
-  <div>
-    <span>R$38,80 </span>
-    <span>+0,37%</span>
+  <div class="stock-info-price">
+    <span class="value">{{stock.price |currency:'BRL'}} </span>
+    <span class="variation" [class.negative-variation-percent]="stock.variation < 0">
+      {{variation}}</span>
   </div>
 </div>

@@ -11,6 +11,7 @@
   flex-direction: row;
   justify-content: flex-start; /*horizontal para row flew// vertical para column flex*/
   align-items: center; /*vertical // horizontal para column flex*/
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 @media screen and (max-width:700px){
   .header

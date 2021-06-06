@@ -1,1 +1,4 @@
-<app-stock-card></app-stock-card>
+<div class="page-container">
+<app-stock-card *ngFor="let stock of stocks" [stock]="stock"></app-stock-card>
+</div>
+
