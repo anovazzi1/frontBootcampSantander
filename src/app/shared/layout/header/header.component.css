@@ -1,0 +1,21 @@
+
+
+.header
+{
+  width: 100%;
+  background-color: var(--primary-color);
+  padding-left: 0.2rem;
+  padding-top: 0.5rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; /*horizontal para row flew// vertical para column flex*/
+  align-items: center; /*vertical // horizontal para column flex*/
+}
+@media screen and (max-width:700px){
+  .header
+  {
+    justify-content:center;
+  }
+
+}
